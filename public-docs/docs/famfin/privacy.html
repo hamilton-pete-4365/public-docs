@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FamFin - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fafafa;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: #111;
+        }
+        .updated {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 28px;
+            margin-bottom: 8px;
+            color: #111;
+        }
+        p, li {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #444;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+        .highlight {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 16px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .highlight p { margin-bottom: 0; }
+        a { color: #ff9800; }
+        .controller {
+            font-size: 14px;
+            color: #666;
+            border: 1px solid #eee;
+            background: #fff;
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        .controller p { margin-bottom: 4px; font-size: 14px; }
+        .controller p:last-child { margin-bottom: 0; }
+    </style>
+</head>
+<body>
+    <h1>FamFin Privacy Policy</h1>
+    <p class="updated">Last updated: 18 April 2026</p>
+
+    <div class="highlight">
+        <p><strong>The short version:</strong> FamFin does not collect, transmit, or share your personal or financial data. Everything you enter stays on your device. The only network activity is with Apple, solely to handle your optional subscription.</p>
+    </div>
+
+    <div class="controller">
+        <p><strong>Data Controller</strong></p>
+        <p>FamFin is developed by Pete Hamilton, an individual developer based in the United Kingdom. For the purposes of UK and EU data protection law, Pete Hamilton is the data controller for the (very limited) processing described in this policy. Contact: <a href="mailto:pete@curatedcfo.com">pete@curatedcfo.com</a>.</p>
+    </div>
+
+    <h2>What FamFin Does</h2>
+    <p>FamFin is a personal-finance app for iPhone and iPad that helps you track accounts, transactions, budgets, categories, and goals. It is designed to work entirely on your device.</p>
+
+    <h2>Data Collection</h2>
+    <p>FamFin does <strong>not</strong> collect any personal or financial data. Specifically:</p>
+    <ul>
+        <li>No personal information is collected by FamFin</li>
+        <li>No financial data is transmitted to FamFin or any third party</li>
+        <li>No analytics, tracking, telemetry, crash reporting, or advertising SDKs are used</li>
+        <li>No cookies, beacons, or device fingerprinting</li>
+        <li>No user accounts or sign-in with FamFin</li>
+        <li>No location data, contacts, photos, or other device data is accessed</li>
+    </ul>
+
+    <h2>Data Storage</h2>
+    <p>Everything you enter into FamFin — including accounts, transactions, budgets, categories, goals, and reconciliation records — is stored locally on your device using Apple's SwiftData framework, inside an App Group container shared only with FamFin's home-screen widget. FamFin has no servers and does not transmit this data over the network.</p>
+
+    <h2>Subscriptions and Payments</h2>
+    <p>FamFin offers an optional auto-renewable monthly subscription. Subscriptions are processed entirely by Apple through the App Store using your Apple ID.</p>
+    <ul>
+        <li>FamFin never sees, receives, or stores your payment details — Apple handles the entire transaction.</li>
+        <li>Apple provides FamFin with a cryptographically-signed receipt confirming your subscription status, which the app verifies locally on your device.</li>
+        <li>Your subscription automatically renews each month unless cancelled at least 24 hours before the end of the current period. Your Apple ID will be charged for renewal within 24 hours before the period ends.</li>
+        <li>You can view, manage, or cancel your subscription at any time from <strong>Settings → [Your Name] → Subscriptions</strong> on your iOS device.</li>
+        <li>Apple's handling of your purchase is governed by the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a> and the <a href="https://www.apple.com/legal/internet-services/itunes/">Apple Media Services Terms and Conditions</a>.</li>
+    </ul>
+
+    <h2>Free Trial</h2>
+    <p>FamFin provides a free trial period before a subscription is required. The trial start date is recorded locally on your device and cross-checked with Apple's record of when you first downloaded FamFin on your Apple ID (via Apple's StoreKit <em>AppTransaction</em> API). No personal information is sent to FamFin during this process.</p>
+
+    <h2>Network Access</h2>
+    <p>FamFin's only network communication is with Apple's StoreKit service, used for:</p>
+    <ul>
+        <li>Loading subscription product information from the App Store</li>
+        <li>Processing a subscription purchase or restore that you initiate</li>
+        <li>Verifying the current status of your subscription</li>
+        <li>Reading Apple's record of your original app-download date</li>
+    </ul>
+    <p>All other app functionality — adding transactions, viewing budgets, running reports, managing accounts — works entirely offline on your device.</p>
+
+    <h2>Data Export and Backup</h2>
+    <p>FamFin includes an optional backup feature that lets you create an encrypted export of your data. You choose the password; FamFin never transmits or stores it. The backup is handled by your device's standard file-sharing system (for example, saved to Files or shared via AirDrop) — FamFin has no visibility into where you save or send it. Without your password, the backup cannot be restored.</p>
+
+    <h2>Security</h2>
+    <p>FamFin takes the following measures to protect your data:</p>
+    <ul>
+        <li><strong>Local encryption:</strong> Backup exports are encrypted with a password-derived key before leaving the app. FamFin cannot read a backup without your password.</li>
+        <li><strong>Optional App Lock:</strong> You can require Face ID, Touch ID, or your device passcode to unlock FamFin. Biometric authentication is handled entirely by Apple's Secure Enclave — FamFin never sees or stores your biometric data.</li>
+        <li><strong>Device-level protection:</strong> All FamFin data sits inside your device's standard app sandbox, protected by your device passcode and iOS's built-in storage encryption.</li>
+    </ul>
+
+    <h2>Third Parties</h2>
+    <p>FamFin does not share data with any third parties. The only entity FamFin communicates with is Apple, and only for the subscription-related operations described above. FamFin uses no advertising networks, no analytics providers, no marketing services, and no cloud storage providers beyond your own iCloud (which is not currently enabled in FamFin).</p>
+
+    <h2>International Transfers</h2>
+    <p>Because FamFin does not collect or store data about you, no international transfers of personal data occur on FamFin's side. Data exchanged with Apple for subscription processing is handled under Apple's own policies and transfer mechanisms.</p>
+
+    <h2>Data Retention</h2>
+    <p>FamFin does not retain any personal data about you because it does not collect any. Data you enter into the app stays on your device for as long as you keep the app installed. Uninstalling FamFin removes its in-app data from your device. Apple retains subscription records separately in accordance with Apple's own policies.</p>
+
+    <h2>Your Rights (UK and EU)</h2>
+    <p>Under the UK Data Protection Act 2018, the UK GDPR, and the EU GDPR, you have rights including access to, correction of, and deletion of personal data held about you. Because FamFin does not hold any personal data about you, there is nothing for us to provide, correct, or delete on our side. For subscription data held by Apple, please contact Apple directly.</p>
+    <p>You also have the right to lodge a complaint with a supervisory authority. In the UK this is the Information Commissioner's Office (<a href="https://ico.org.uk/">ico.org.uk</a>). In the EU it is the data protection authority in your country of residence.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>FamFin is rated 4+ in the App Store but is not designed for or marketed to children. FamFin does not knowingly collect any information from anyone, including children. If you are a parent or guardian and have questions about your child's use of the app, please contact us at <a href="mailto:pete@curatedcfo.com">pete@curatedcfo.com</a>.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this privacy policy changes, the updated version will be posted at this URL with a new "last updated" date. Substantive changes will also be noted in the app's release notes on the App Store. Your continued use of FamFin after a change constitutes acceptance of the updated policy.</p>
+
+    <h2>Governing Law</h2>
+    <p>This privacy policy is governed by the laws of England and Wales.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions about this privacy policy or how FamFin handles data, please email <a href="mailto:pete@curatedcfo.com">pete@curatedcfo.com</a>.</p>
+</body>
+</html>
